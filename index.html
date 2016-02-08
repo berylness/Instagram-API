@@ -1,5 +1,6 @@
+<!-- Instagram API Challenge -->
+
 <!DOCTYPE html>
-<!-- What does this do? -->
 <html ng-app="instagramSearchApp">
 
 <head>
@@ -20,17 +21,18 @@
 
   <!-- Search Box and Button -->
   <div class="content">
+      <h1>Search for Instagram Photos by Topic </h1>
+
        <form id="searchform" form name="instasearch" novalidate ng-submit="getInstagramResults()">
        <input ng-model="searchTerm" placeholder="Explore Instagram">
        <button type="submit">Search</button>
       </form>
-    <h1>Search for Instagram Photos by Topic </h1>
-</div>
+  </div>
 </div>
 
 
 <!-- Search Results Section -->
-<div ng-if="showNotification" class="message"</div>
+<div ng-if="showNotification" class="message">{{showNotification}}</div>
      <div class="pictureDiv animate-repeat" ng-repeat="picture in results">
       <!-- Displays title above the image -->
       <h3><a target="_blank" href='http://instagram.com/{{picture.user.username}}'>{{picture.user.username}}</a></h3>
