@@ -1,3 +1,5 @@
+/* Instagram API Styles */
+
 .container {
 	margin: 0 auto;
 	width: 980px;
@@ -102,12 +104,14 @@ form {
 /* Text Displaying the Number of Image Results Found */
 .message {
 	text-align: center;
-	margin-top: 80px;
+	margin-top: 40px;
 	margin-bottom: 30px;
 	padding-bottom: 30px;
+	font-family: 'Londrina Solid', cursive;
+	font-size: 25px;
 }
 
-/* Error Message When the User Does Not Enter a Keyword */
+/* Error Message Displaying When the User Does Not Enter a Keyword */
 .error {
 	color: red;
 }

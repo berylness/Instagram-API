@@ -1,3 +1,5 @@
+/* Instagram API Sscript (with Angular) */
+
 var app = angular.module('instagramSearchApp', ['ngAnimate'])
   .controller('InstagramSearchController', function($scope, $q, $http) {
 
@@ -54,7 +56,7 @@ var app = angular.module('instagramSearchApp', ['ngAnimate'])
     /* Error Getting Results */
     .error(function(result){
       notification().then(function() {
-          $scope.showNotification = "Sorry, We Are Experiencing an Error";
+          $scope.showNotification = "Please Enter Your Search Term";
           $scope.hasError = true;
         })
       });
